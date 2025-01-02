@@ -643,9 +643,9 @@ calculate_and_display_travel(plane, distance)
 
 #
 #
-#
-# import random
-# def random_txt():
+
+import random
+def random_txt():
 #     # random_choise = random.choices(["Python", "Java", "Kotlin", "JavaScript", "C#","RUBY"])
 #     with open('text.txt',"w",encoding='UTF-8')as file:
 #         file.write(random.choice(["Python", "Java", "Kotlin", "JavaScript", "C#","RUBY"]))
