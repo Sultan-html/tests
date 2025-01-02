@@ -548,10 +548,10 @@ class BankAcount:
         password_input = int(input('Введите ваш пароль: '))
         if password == password_input:
             print(f'Ваш текущий баланс равен {self.__balance}')
-# bankaccount = BankAcount(3000)
-# bankaccount.deposit()
-# bankaccount.withdraw()
-# bankaccount.get_balance()
+bankaccount = BankAcount(3000)
+bankaccount.deposit()
+bankaccount.withdraw()
+bankaccount.get_balance()
 
 # class Vehicle:
 #     def __init__(self, name, max_speed):
