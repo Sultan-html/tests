@@ -553,62 +553,62 @@ bankaccount.deposit()
 bankaccount.withdraw()
 bankaccount.get_balance()
 
-# class Vehicle:
-#     def __init__(self, name, max_speed):
-#         self.name = name
-#         self.max_speed = max_speed
+class Vehicle:
+    def __init__(self, name, max_speed):
+        self.name = name
+        self.max_speed = max_speed
 
-#     def calculate_travel_time(self, distance):
-#         return 0
+    def calculate_travel_time(self, distance):
+        return 0
 
-#     def display_info(self):
-#         print(f'Марка транспортного средства {self.name} преднозначен для вип герл, максимальная скорость {self.max_speed} км/ч')
-
-
-# class Car(Vehicle):
-#     def __init__(self, name, max_speed):
-#         super().__init__(name, max_speed)
-
-#     def calculate_travel_time(self, distance):
-#         return distance / self.max_speed
+    def display_info(self):
+        print(f'Марка транспортного средства {self.name} преднозначен для вип герл, максимальная скорость {self.max_speed} км/ч')
 
 
-# class Bicycle(Vehicle):
-#     def __init__(self, name, max_speed):
-#         super().__init__(name, max_speed)
+class Car(Vehicle):
+    def __init__(self, name, max_speed):
+        super().__init__(name, max_speed)
 
-#     def calculate_travel_time(self, distance):
-#         travel_time = distance / self.max_speed
-#         travel_time_with_stops = travel_time * 1.2
-#         return travel_time_with_stops
+    def calculate_travel_time(self, distance):
+        return distance / self.max_speed
 
 
-# class Plane(Vehicle):
-#     def __init__(self, name, max_speed):
-#         super().__init__(name, max_speed)
+class Bicycle(Vehicle):
+    def __init__(self, name, max_speed):
+        super().__init__(name, max_speed)
 
-#     def calculate_travel_time(self, distance):
-#         travel_time = distance / self.max_speed
-#         time_with_factors = travel_time + 1
-#         return time_with_factors
-
-
-# def calculate_and_display_travel(vehicle, distance):
-#     vehicle.display_info()
-#     travel_time = vehicle.calculate_travel_time(distance)
-#     print(f"Время в поездке на этом транспортном средстве для расстояния {distance} км будет составлять {travel_time} часов.")
+    def calculate_travel_time(self, distance):
+        travel_time = distance / self.max_speed
+        travel_time_with_stops = travel_time * 1.2
+        return travel_time_with_stops
 
 
-# bicycle = Bicycle(name='деревенский', max_speed=20)
-# car = Car(name='матиз', max_speed=100)
-# plane = Plane(name='боинг789873249856787    ', max_speed=800)
+class Plane(Vehicle):
+    def __init__(self, name, max_speed):
+        super().__init__(name, max_speed)
 
-# distance = 400
+    def calculate_travel_time(self, distance):
+        travel_time = distance / self.max_speed
+        time_with_factors = travel_time + 1
+        return time_with_factors
 
 
-# calculate_and_display_travel(bicycle, distance)
-# calculate_and_display_travel(car, distance)
-# calculate_and_display_travel(plane, distance)
+def calculate_and_display_travel(vehicle, distance):
+    vehicle.display_info()
+    travel_time = vehicle.calculate_travel_time(distance)
+    print(f"Время в поездке на этом транспортном средстве для расстояния {distance} км будет составлять {travel_time} часов.")
+
+
+bicycle = Bicycle(name='деревенский', max_speed=20)
+car = Car(name='матиз', max_speed=100)
+plane = Plane(name='боинг789873249856787    ', max_speed=800)
+
+distance = 400
+
+
+calculate_and_display_travel(bicycle, distance)
+calculate_and_display_travel(car, distance)
+calculate_and_display_travel(plane, distance)
 
 
 # 1) Напишите функцию, которая принимает список, из списка выдает случайное
