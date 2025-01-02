@@ -663,17 +663,17 @@ random_txt()
 # with open('test.txt','w',encoding='UTF-8')as file:
 #     file.write(text)
 #
-# with open('tes.txt','a')as file:
-#     file.write('''Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-# has been the industry's standard dummy text ever since the 1500s, when an unknown
-# printer took a galley of type and scrambled it to make a type specimen book. It has
-# survived not only five centuries, but also the leap into electronic typesetting, remaining
-# essentially unchanged. It was popularized in the 1960s with the release of Letraset
-# sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-# software like Aldus PageMaker including versions of Lorem Ipsum.
-# Откройте файл text.txt и запишите текст в файл 2 способами
-# ''')
-#
+with open('tes.txt','a')as file:
+    file.write('''Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+has been the industry's standard dummy text ever since the 1500s, when an unknown
+printer took a galley of type and scrambled it to make a type specimen book. It has
+survived not only five centuries, but also the leap into electronic typesetting, remaining
+essentially unchanged. It was popularized in the 1960s with the release of Letraset
+sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+software like Aldus PageMaker including versions of Lorem Ipsum.
+Откройте файл text.txt и запишите текст в файл 2 способами
+''')
+
 # with open('test.txt', 'r', encoding='UTF-8') as text,\
 #      open('destination.txt', 'w', encoding='UTF-8') as copys:
 #     copys.write(text.read())
